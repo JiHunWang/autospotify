@@ -11,6 +11,8 @@
 		CEA9233A28D6D97F0018040F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9233928D6D97F0018040F /* ContentView.swift */; };
 		CEA9233C28D6D9800018040F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA9233B28D6D9800018040F /* Assets.xcassets */; };
 		CEA9233F28D6D9810018040F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA9233E28D6D9810018040F /* Preview Assets.xcassets */; };
+		CEA9234728D7186C0018040F /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9234628D7186C0018040F /* ArchiveView.swift */; };
+		CEA9234928D71A940018040F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9234828D71A940018040F /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		CEA9233928D6D97F0018040F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEA9233B28D6D9800018040F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA9233E28D6D9810018040F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEA9234528D6DE310018040F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CEA9234628D7186C0018040F /* ArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveView.swift; sourceTree = "<group>"; };
+		CEA9234828D71A940018040F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +56,12 @@
 		CEA9233628D6D97F0018040F /* autospotify */ = {
 			isa = PBXGroup;
 			children = (
+				CEA9234528D6DE310018040F /* Info.plist */,
 				CEA9233728D6D97F0018040F /* autospotifyApp.swift */,
 				CEA9233928D6D97F0018040F /* ContentView.swift */,
 				CEA9233B28D6D9800018040F /* Assets.xcassets */,
+				CEA9234628D7186C0018040F /* ArchiveView.swift */,
+				CEA9234828D71A940018040F /* HomeView.swift */,
 				CEA9233D28D6D9810018040F /* Preview Content */,
 			);
 			path = autospotify;
@@ -138,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEA9233A28D6D97F0018040F /* ContentView.swift in Sources */,
+				CEA9234928D71A940018040F /* HomeView.swift in Sources */,
+				CEA9234728D7186C0018040F /* ArchiveView.swift in Sources */,
 				CEA9233828D6D97F0018040F /* autospotifyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +280,7 @@
 				DEVELOPMENT_TEAM = 5W37HQDN7B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = autospotify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +310,7 @@
 				DEVELOPMENT_TEAM = 5W37HQDN7B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = autospotify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
