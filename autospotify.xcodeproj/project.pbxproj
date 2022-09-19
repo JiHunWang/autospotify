@@ -13,6 +13,11 @@
 		CEA9233F28D6D9810018040F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA9233E28D6D9810018040F /* Preview Assets.xcassets */; };
 		CEA9234728D7186C0018040F /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9234628D7186C0018040F /* ArchiveView.swift */; };
 		CEA9234928D71A940018040F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9234828D71A940018040F /* HomeView.swift */; };
+		CEA9234B28D739630018040F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9234A28D739630018040F /* SettingsView.swift */; };
+		CEA9234D28D7597E0018040F /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9234C28D7597E0018040F /* AccountView.swift */; };
+		CEA9234F28D759D70018040F /* LanguageSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9234E28D759D70018040F /* LanguageSettingView.swift */; };
+		CEA9235128D75A160018040F /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9235028D75A160018040F /* AboutView.swift */; };
+		CEA9235328D87BAE0018040F /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA9235228D87BAD0018040F /* SpotifyiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,12 @@
 		CEA9234528D6DE310018040F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CEA9234628D7186C0018040F /* ArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveView.swift; sourceTree = "<group>"; };
 		CEA9234828D71A940018040F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CEA9234A28D739630018040F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CEA9234C28D7597E0018040F /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		CEA9234E28D759D70018040F /* LanguageSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSettingView.swift; sourceTree = "<group>"; };
+		CEA9235028D75A160018040F /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		CEA9235228D87BAD0018040F /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
+		CEA9235428D87C360018040F /* autospotify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "autospotify-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA9235328D87BAE0018040F /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +68,7 @@
 		CEA9233628D6D97F0018040F /* autospotify */ = {
 			isa = PBXGroup;
 			children = (
+				CEA9235228D87BAD0018040F /* SpotifyiOS.framework */,
 				CEA9234528D6DE310018040F /* Info.plist */,
 				CEA9233728D6D97F0018040F /* autospotifyApp.swift */,
 				CEA9233928D6D97F0018040F /* ContentView.swift */,
@@ -63,6 +76,11 @@
 				CEA9234628D7186C0018040F /* ArchiveView.swift */,
 				CEA9234828D71A940018040F /* HomeView.swift */,
 				CEA9233D28D6D9810018040F /* Preview Content */,
+				CEA9234A28D739630018040F /* SettingsView.swift */,
+				CEA9234C28D7597E0018040F /* AccountView.swift */,
+				CEA9234E28D759D70018040F /* LanguageSettingView.swift */,
+				CEA9235028D75A160018040F /* AboutView.swift */,
+				CEA9235428D87C360018040F /* autospotify-Bridging-Header.h */,
 			);
 			path = autospotify;
 			sourceTree = "<group>";
@@ -107,6 +125,7 @@
 				TargetAttributes = {
 					CEA9233328D6D97F0018040F = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -145,9 +164,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA9235128D75A160018040F /* AboutView.swift in Sources */,
+				CEA9234D28D7597E0018040F /* AccountView.swift in Sources */,
+				CEA9234B28D739630018040F /* SettingsView.swift in Sources */,
 				CEA9233A28D6D97F0018040F /* ContentView.swift in Sources */,
 				CEA9234928D71A940018040F /* HomeView.swift in Sources */,
 				CEA9234728D7186C0018040F /* ArchiveView.swift in Sources */,
+				CEA9234F28D759D70018040F /* LanguageSettingView.swift in Sources */,
 				CEA9233828D6D97F0018040F /* autospotifyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,11 +297,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"autospotify/Preview Content\"";
 				DEVELOPMENT_TEAM = 5W37HQDN7B;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/autospotify",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = autospotify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -291,9 +319,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JiHunWang.autospotify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "autospotify/autospotify-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,11 +335,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"autospotify/Preview Content\"";
 				DEVELOPMENT_TEAM = 5W37HQDN7B;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/autospotify",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = autospotify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -321,9 +357,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JiHunWang.autospotify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "autospotify/autospotify-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -36,7 +36,7 @@ struct ContentView: View {
                     }
                     .tag(Tabs.home)
                 
-                Text("Nearby Screen")
+                SettingsView()
                     .tabItem {
                         Image(systemName: "gearshape.fill")
                         Text("Settings")
