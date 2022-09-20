@@ -12,8 +12,8 @@ import Foundation
 
 let accessTokenKey = "access-token-key"
 let redirectUri = URL(string:"autospotify://")!
-let spotifyClientId = "14ab57f2c44e41ea9d9ee39eb65348d0"
-let spotifyClientSecretKey = "af388348a7544963b24039fbe4623d62"
+let spotifyClientId = "spotify-client-id"
+let spotifyClientSecretKey = "secret-client-secret-key"
 
 
 /* Permissions that are only applicable to this app's functionality
