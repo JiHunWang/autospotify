@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-@main
 struct autospotifyApp: App {
+    @UIApplicationDelegateAdaptor var delegate: AppDelegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

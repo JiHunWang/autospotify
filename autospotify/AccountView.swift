@@ -9,7 +9,9 @@ import SwiftUI
 
 struct AccountView: View {
     var body: some View {
-        Text("Account page")
+        VStack {
+            MainAuthorize()
+        }
     }
 }
 

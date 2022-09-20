@@ -18,6 +18,12 @@
 		CEA9234F28D759D70018040F /* LanguageSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9234E28D759D70018040F /* LanguageSettingView.swift */; };
 		CEA9235128D75A160018040F /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9235028D75A160018040F /* AboutView.swift */; };
 		CEA9235328D87BAE0018040F /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA9235228D87BAD0018040F /* SpotifyiOS.framework */; };
+		CEA9235828D8856D0018040F /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9235728D8856D0018040F /* Authorization.swift */; };
+		CEA9235C28D88EB40018040F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9235B28D88EB40018040F /* MainView.swift */; };
+		CEA9235E28D890B60018040F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9235D28D890B60018040F /* AppDelegate.swift */; };
+		CEA9236028D8913C0018040F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9235F28D8913C0018040F /* SceneDelegate.swift */; };
+		CEA9236228D8A4D00018040F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9236128D8A4D00018040F /* ViewController.swift */; };
+		CEA9236428D8A5150018040F /* MainAuthorize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9236328D8A5150018040F /* MainAuthorize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +41,12 @@
 		CEA9235028D75A160018040F /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		CEA9235228D87BAD0018040F /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 		CEA9235428D87C360018040F /* autospotify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "autospotify-Bridging-Header.h"; sourceTree = "<group>"; };
+		CEA9235728D8856D0018040F /* Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
+		CEA9235B28D88EB40018040F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CEA9235D28D890B60018040F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEA9235F28D8913C0018040F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEA9236128D8A4D00018040F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEA9236328D8A5150018040F /* MainAuthorize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAuthorize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,12 @@
 				CEA9234E28D759D70018040F /* LanguageSettingView.swift */,
 				CEA9235028D75A160018040F /* AboutView.swift */,
 				CEA9235428D87C360018040F /* autospotify-Bridging-Header.h */,
+				CEA9235728D8856D0018040F /* Authorization.swift */,
+				CEA9236328D8A5150018040F /* MainAuthorize.swift */,
+				CEA9235B28D88EB40018040F /* MainView.swift */,
+				CEA9235D28D890B60018040F /* AppDelegate.swift */,
+				CEA9235F28D8913C0018040F /* SceneDelegate.swift */,
+				CEA9236128D8A4D00018040F /* ViewController.swift */,
 			);
 			path = autospotify;
 			sourceTree = "<group>";
@@ -164,14 +182,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA9235E28D890B60018040F /* AppDelegate.swift in Sources */,
 				CEA9235128D75A160018040F /* AboutView.swift in Sources */,
 				CEA9234D28D7597E0018040F /* AccountView.swift in Sources */,
 				CEA9234B28D739630018040F /* SettingsView.swift in Sources */,
+				CEA9235C28D88EB40018040F /* MainView.swift in Sources */,
 				CEA9233A28D6D97F0018040F /* ContentView.swift in Sources */,
 				CEA9234928D71A940018040F /* HomeView.swift in Sources */,
 				CEA9234728D7186C0018040F /* ArchiveView.swift in Sources */,
+				CEA9236428D8A5150018040F /* MainAuthorize.swift in Sources */,
+				CEA9236228D8A4D00018040F /* ViewController.swift in Sources */,
+				CEA9235828D8856D0018040F /* Authorization.swift in Sources */,
 				CEA9234F28D759D70018040F /* LanguageSettingView.swift in Sources */,
 				CEA9233828D6D97F0018040F /* autospotifyApp.swift in Sources */,
+				CEA9236028D8913C0018040F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,9 +333,8 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = autospotify/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "To identify songs, enable your microphone.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -347,9 +370,8 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = autospotify/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "To identify songs, enable your microphone.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
